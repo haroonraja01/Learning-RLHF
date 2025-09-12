@@ -1,8 +1,9 @@
 Reinforcement Learning for Model Fine-tuning
 ===============================
 In this document we provide a brief introduction to reinforcement learning (RL). In the following we first descibe the problem setup and the challenges while solving, then we will will briefly describe the policy gradient style algorithms and why such algorithms are preferred for solving RL in the context of large language models (LLM), and finally we provide experimental results on classical cartpole environment and fine-tuning GPT-2 using RLHF.
-# Introduction
 
+# Introduction
+Consider a tuple $(s_t, a_t, r_{t + 1})$, where $s_t \in \mathcal{S}$ is the current state, $a_t \in \mathcal{A}$ is the action taken at time using some policy $\pi(a_t|s_t)$, and $r_{t+1}$ is the reward.
 
 
 # On- vs Off-Policy: Key Take-aways
@@ -43,3 +44,4 @@ Stable, scalable on-policy method; the backbone of RLHF training.
 Reward modeling from human comparisons; first demonstration of RL with human preference signals.
 - 📄 Ziegler et al., 2019 — “Fine-Tuning Language Models from Human Preferences”
 Full RLHF pipeline on language models (SFT → reward model → PPO fine-tuning).
+
