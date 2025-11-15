@@ -1,6 +1,8 @@
-Reinforcement Learning for Model Fine-tuning
+Role of Reinforcement Learning in Fine-tuning/Post-training LLMs
 ===============================
-In this document we provide a brief introduction to reinforcement learning (RL). In the following we descibe the problem setup, policy optimization and its challenges, then we will briefly describe the policy gradient style algorithms and why such algorithms are preferred for solving RL in the context of large language models (LLM), and finally we provide experimental results on classical cartpole environment.
+Typical Large language models (LLMs) are trained on trillions of tokens in a self-supervised manner. This training phase is called pre-training and it endows models with exceptional ability in terms of language comprehenssion and knowledge of the content present in the trainig data.
+
+In the following we provide introduction to reinforcement learning (RL). We descibe the problem setup, policy optimization and its challenges, then we will describe the policy gradient style algorithms and **why** such algorithms are preferred for solving RL in the context of LLMs, and finally we provide experimental results on classical cartpole environment.
 
 # Introduction
 Consider a tuple $(s_t, a_t, r_{t + 1})$, where $s_t \in \mathcal{S}$ is the current state, $a_t \in \mathcal{A}$ is the action taken at time using some policy $\pi(a_t|s_t)$, and $r_{t+1}$ is the reward.
