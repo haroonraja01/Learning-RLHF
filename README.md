@@ -1,5 +1,5 @@
 # Reinforcement-learning (RL) for fine-tuning
-This repository documents my understanding of reinforcement learning. Following is an ongoing list of topics I have covered so far:
+This repository documents my understanding of reinforcement learning. Following is the list of topics I have covered so far:
 
 1. Implemented of REINFORCE algorithm and applied to cartpole gym environment. For further improvements in policy estimates implemented REINFORCE with baseline, actor-critic, and proximal policy optimization approaches.
 
